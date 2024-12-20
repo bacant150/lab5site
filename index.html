@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="dataForm">
+        <h2>Форма для заповнення</h2>
+        <label for="name">ПІБ:</label>
+        <input type="text" id="name" placeholder="ТТТТТТ Т.Т." required />
+
+        <label for="group">Група:</label>
+        <input type="text" id="group" placeholder="ТТ-ЧЧ" required />
+
+        <label for="idCard">ID-card:</label>
+        <input type="text" id="idCard" placeholder="ТТ №ЧЧЧЧЧЧ" required />
+
+        <label for="birthdate">Дата народж.:</label>
+        <input type="text" id="birthdate" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ" required />
+
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" placeholder="тттттт@ттттт.com" required />
+
+        <button type="submit">Підтвердити</button>
+      </form>
+      
+      <div id="output">
+        <h3>Введені дані</h3>
+        <p id="outputData"></p>
+      </div>
+      <div id="errors" style="display: none"></div>
+    </div>
+
+    <div class="table-container">
+      <h2>Таблиця завдання 2</h2>
+      <input type="color" id="colorPicker" value="#FF0000" />
+      <table id="interactiveTable"></table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
